@@ -1,5 +1,8 @@
 #faqs {
   // @include flexContainer();
+  // @extend #header;
+  // @extend .header-bottom;
+  padding: 40px 0;
 
   h1 {
     font-size: 3rem;
@@ -10,9 +13,56 @@
     grid-template-columns: 1fr;
     justify-content: center;
 
-    .quiz{
+    .quiz {
+      padding: 0 30px;
+      width: 60%;
+      margin: 5px auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $faqColor;
+      cursor: pointer;
+
+      p {
+        display: none;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+  .form-head {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 40px 0 10px 0;
+  }
+
+  #form {
+    margin: 0;
+    padding: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+
+    input {
+      padding: 15px 10px;
+      width: 600px;
+      outline: 0;
+      border: 0;
+    }
+
+    #start-btn {
+      padding: 15px 0px;
+      width: 130%;
+      outline: 0;
+      border: 0;
+      font-size: 25px;
+      background-color: $buttonColor;
+      color: $textColor;
     }
   }
 }
