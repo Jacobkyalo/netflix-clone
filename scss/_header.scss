@@ -1,0 +1,77 @@
+#header {
+  height: 100vh;
+  border-bottom:$border;
+  background: url(../images/background.jpg) no-repeat center;
+  background-size: cover;
+  object-fit: contain;
+  opacity: 0.85;
+
+  .header-top {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #logo {
+      width: 150px;
+    }
+
+    #sign-in {
+      background-color: $buttonColor;
+      padding: 5px 15px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+    }
+  }
+  .header-bottom {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      word-wrap: normal;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      padding: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 100;
+      padding: 20px 0;
+    }
+  }
+
+  #form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    input {
+      padding: 15px 10px;
+      width: 600px;
+      outline: 0;
+      border: 0;
+    }
+
+    #start-btn {
+      padding: 15px 0px;
+      width: 130%;
+      outline: 0;
+      border: 0;
+      font-size: 25px;
+      background-color: $buttonColor;
+      color: $textColor;
+    }
+  }
+}

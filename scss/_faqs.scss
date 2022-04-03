@@ -1,0 +1,18 @@
+#faqs {
+  // @include flexContainer();
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    .quiz{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

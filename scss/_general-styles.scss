@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bgColor;
+  color: $textColor;
+  line-height: 1.7;
+  font-family: $fontFamily;
+}
+.wrapper{
+  margin: auto;
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: $textColor;
+}
+@mixin flexContainer() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // flex-wrap: wrap;
+}

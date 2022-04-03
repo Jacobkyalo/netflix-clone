@@ -1,0 +1,61 @@
+.sections {
+  border-bottom: $border;
+
+  #tv-show-section {
+    @include flexContainer();
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px 0;
+
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 0px;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .tv-image {
+      width: 100%;
+      padding-left: 20px;
+    }
+  }
+}
+
+#mobile-show-section {
+  @extend #tv-show-section;
+
+  h1 {
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  #mobile-image {
+    width: 100%;
+  }
+}
+
+#watch {
+  @extend #tv-show-section;
+}
+
+#kids-show-section {
+  @extend #mobile-show-section;
+
+  .kids-image {
+    width: 80%;
+  }
+}
+
+#android-phone-section {
+  @extend #tv-show-section;
+
+  h1,
+  p {
+    line-height: 1.3;
+  }
+  p {
+    padding: 20px 0;
+  }
+  .android-phone {
+    width: 80%;
+  }
+}
